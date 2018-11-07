@@ -121,9 +121,9 @@ public class ChooseAreaFragment extends Fragment {
                     else if (getActivity() instanceof WeatherActivity){
                         WeatherActivity activity = (WeatherActivity)getActivity();
 
-                        SharedPreferences.Editor editor =PreferenceManager.getDefaultSharedPreferences(getContext()).edit();
+                        /*SharedPreferences.Editor editor =PreferenceManager.getDefaultSharedPreferences(getContext()).edit();
                         editor.putString("weather_id", weatherId);
-                        editor.apply();
+                        editor.apply();*/
 
                         activity.drawerLayout.closeDrawers();
                         activity.swipeReFresh.setRefreshing(true);
